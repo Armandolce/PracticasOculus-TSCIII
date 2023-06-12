@@ -7,11 +7,13 @@ public class Jugador : MonoBehaviour
     public Transform weaponPos;
     public GameObject bullet;
     private float force= 10.0f;
+    private bool imIDead;
+    public Transform initalPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        imIDead = false;
     }
 
     // Update is called once per frame
@@ -25,5 +27,21 @@ public class Jugador : MonoBehaviour
 
             rb.AddForce(weaponPos.transform.forward *force, ForceMode.Impulse);
         }
+    }
+
+    public bool status()
+    {
+        return imIDead;
+    }
+
+    public void setDeath()
+    {
+        imIDead = true;
+    }    
+    public void reivive()
+    {
+        transform.position = initalPos.position;
+        transform.rotation = initalPos.rotation;
+        imIDead = false;
     }
 }

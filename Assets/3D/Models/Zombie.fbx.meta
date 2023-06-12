@@ -5,6 +5,16 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: parasitezombie_Material
+    second: {fileID: 2100000, guid: 8ff5f4d59cc6d294698aabffcbc9d403, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: parasitezombie_Material1
+    second: {fileID: 2100000, guid: 72bad237a870bfc4e8f77dc32b99074a, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: parasiteZombie_body_diffuse
@@ -64,7 +74,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
